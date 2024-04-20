@@ -1,0 +1,44 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class cube : MonoBehaviour
+{
+    private int value,n,a,b;
+
+   
+    // Start is called before the first frame update
+    void Start()
+    {
+        b=5;a=3;
+         add(a,b);
+         sub(a,b);
+        
+      
+
+   
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    // function clled
+  void add(int x,int y)
+  {
+    n=a*b;
+    display(n);
+  }
+   void sub(int x,int y)
+  {
+    value=a-b; 
+    display(value);
+  }
+ 
+  void display(int x)
+  {
+  Debug.Log(x);
+  }
+   
+}

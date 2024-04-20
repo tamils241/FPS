@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num1, num2;
+  char user_select;
+  cout << "Enter The First Number\n";
+  cin >> num1;
+  cout << "Enter The Second Number\n";
+  cin >> num2;
+  cout << "Select The Operation\n";
+  cin >> user_select;
+  if (user_select == '+') {
+    cout << num1 + num2;
+  } else if (user_select == '-') {
+    cout << num1 - num2;
+  } else if (user_select == '*') {
+    cout << num1 * num2 << endl;
+  } else if (user_select == '/') {
+    cout << num1 / num2 << endl;
+  } else {
+    cout << "Invalid Input";
+    return 0;
+  }
+}

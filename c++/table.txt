@@ -1,0 +1,17 @@
+
+#include <iostream>
+using namespace std;
+int main(){
+int n,i,b,value;
+  cout<< "enter the number of time:";
+  cin>>n; 
+  cout<<"enter the table number:";
+  cin>>b;
+  for (i=1;i<=n;i++)
+    {
+      value=i*b;
+      cout<< i<<"*"<<b<< "="<< value<< endl;
+    }
+      
+  
+}

@@ -1,0 +1,36 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class sample : MonoBehaviour
+{
+    [SerializeField]
+     private Button btnclick;
+     [SerializeField]
+     private TMP_Text output;
+     private int a;
+     private int b;  
+     // Start is called before the first frame update
+     // Start is called before the first frame update
+    void Start()
+    {
+        a=50;
+        b=45;
+    btnclick.onClick.AddListener(OnButtonClick);    
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+    private void OnButtonClick()
+    {
+        int c=a+b;
+        Debug.Log("hi");
+        output.text= "sum:"+c;
+       
+    }
+}

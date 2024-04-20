@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num1, num2;
+  char user_select;
+  cout << "Enter The First Number\n";
+  cin >> num1;
+  cout << "Enter The Second Number\n";
+  cin >> num2;
+  cout << "Select The Operation\n";
+  cin >> user_select;
+  switch (user_select) {
+  case '+':
+    cout << num1 + num2;
+    break;
+  case '-':
+    cout << "Value:" << num1 - num2;
+    break;
+  case '*':
+    cout << "Value:" << num1 * num2;
+    break;
+  case '/':
+    cout << "Value:" << num1 / num2;
+    break;
+  default:
+    cout << "Invalid Operation";
+    break;
+  }
+}
